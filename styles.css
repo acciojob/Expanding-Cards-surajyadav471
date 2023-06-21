@@ -1,1 +1,28 @@
 /*  your css code here. If applicable */
+img {
+	min-width: 20px;
+	height:100px;
+}
+
+.last{
+	flex-grow: 1;
+}
+
+div{
+	display: flex;
+	gap:10px;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+}
+img{
+	flex-shrinks: 1;
+}
+img:hover{
+/* 	flex-grow: 1; */
+}
+.container > img:hover - .last{
+	flex-grow: 0;
+}
+.container > img:hover{
+	flex-grow: 1;
+}
